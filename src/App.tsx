@@ -29,7 +29,6 @@ import { useLogin } from './auth';
 const App = () => {
   const [accessToken, setAccessToken] = useState('');
   const navigate = useNavigate();
-  const location = useLocation();
 
   const tokenMutation = useMutation(fetchSpotifyToken, {
     onSuccess:  (data) => {
