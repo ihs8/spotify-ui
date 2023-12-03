@@ -1,6 +1,6 @@
 export const client_id = 'e9127493a5ce478a985afd4ad2f6fa6a';
 export const client_secret = '2891b35e4f884be9a22bfbf5111025c3';
-export const uri = 'https://ihs8.github.io/spotify-ui/spotify-ui';
+export const uri = 'http://localhost:5173/spotify-ui';
 
 export const scopes = [
     'user-read-recently-played',
