@@ -20,7 +20,7 @@ import {
 
 import { Layout, Loading } from './components';
 import { getCookie, setCookie } from './utils/useCookie';
-import {  Navigate, Route, useLocation, useNavigate } from 'react-router-dom';
+import {  Navigate, Route, useNavigate } from 'react-router-dom';
 import { useMutation } from 'react-query'
 import { useEffect, useState } from 'react';
 import { fetchSpotifyToken } from './spotifyService';
@@ -29,7 +29,7 @@ import { useLogin } from './auth';
 const App = () => {
   const [accessToken, setAccessToken] = useState('');
   const navigate = useNavigate();
-  const location = useLocation();
+  
 
   const tokenMutation = useMutation(fetchSpotifyToken, {
     onSuccess:  (data) => {
