@@ -67,7 +67,7 @@ const App = () => {
   
      
       
-      if (code) navigate("/spotify-ui/")
+      if (code) navigate("/spotify-ui")
       tokenMutation.mutate({
         grant_type: 'refresh_token',
         refresh_token: getCookie('refresh_token'),
@@ -84,9 +84,7 @@ const App = () => {
   </div>
 ) : (
  
-  
-
-    <Layout login={useLogin}>
+ <Layout login={useLogin}>
       <Route  path="/" element={<Home />} />
       <Route path="/playlist/:id" element={<PlaylistTemplate />} />
       <Route path="/album/:id" element={<AlbumTemplate />} />
