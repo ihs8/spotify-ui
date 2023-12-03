@@ -29,6 +29,7 @@ import { useLogin } from './auth';
 const App = () => {
   const [accessToken, setAccessToken] = useState('');
   const navigate = useNavigate();
+  
 
   const tokenMutation = useMutation(fetchSpotifyToken, {
     onSuccess:  (data) => {
@@ -49,8 +50,7 @@ const App = () => {
   const code = urlParams.get('code');
   useEffect(() => {
     if (!getCookie('refresh_token')) {
-      const urlParams = new URLSearchParams(window.location.search);
-      const code = urlParams.get('code');
+
 
       if (!code) {
         navigate('/spotify-ui/login');
