@@ -46,6 +46,8 @@ const App = () => {
       console.error(error);
     },
   });
+  const urlParams = new URLSearchParams(window.location.search);
+  const code = urlParams.get('code');
   useEffect(() => {
     if (!getCookie('refresh_token')) {
       const urlParams = new URLSearchParams(window.location.search);
@@ -66,7 +68,7 @@ const App = () => {
   
      
       
-      if (location.pathname === 'https://ihs8.github.io/spotify-ui/spotify-ui') navigate("/spotify-ui/")
+      if (code) navigate("/spotify-ui/")
       tokenMutation.mutate({
         grant_type: 'refresh_token',
         refresh_token: getCookie('refresh_token'),
