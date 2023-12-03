@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
     <QueryClientProvider client={queryClient}>
     <Routes>
-    <Route path='/spotify-ui/'  element= {<App/>} />
+    <Route path='/spotify-ui/*'  element= {<App/>} />
     </Routes>
     </QueryClientProvider>
     </BrowserRouter>
