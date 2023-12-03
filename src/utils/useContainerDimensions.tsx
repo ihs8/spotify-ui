@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import  { useState, useEffect, useRef } from 'react';
 
 export function useContainerDimensions() {
-  const ref = useRef(null);
-  const [dimensions, setDimensions] = useState({
+  const ref = useRef<any>(null);
+  const [dimensions, setDimensions] = useState<any>({
     width: 0,
     height: 0,
   });

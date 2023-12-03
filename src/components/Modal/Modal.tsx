@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import  { useRef } from 'react';
 import { CloseImg } from '../../assets/svg';
 import { Button } from '..';
 import './Modal.styles.css';

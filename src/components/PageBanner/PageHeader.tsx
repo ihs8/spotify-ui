@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import  { useEffect, useRef, useState } from 'react';
 import './PageBanner.styles.css';
 export const PageHeader = ({ bgColor, disabled, children }:any) => {
   const headerBgRef = useRef<any>(null);

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import{ useContext, useEffect, useState } from 'react';
 import './VolumeButton.styles.css';
 import { Button, RangeSlider } from '..';
 import {
