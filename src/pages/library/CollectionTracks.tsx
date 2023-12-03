@@ -4,7 +4,7 @@ import { useContext, useEffect, useState } from 'react';
 import { Loading, PageBanner, TrackList } from '../../components';
 
 import {
-  TrackContext,
+
   UserContext,
 } from '../../utils/context';
 import {  useResponseFormater } from '../../utils';
@@ -15,7 +15,7 @@ import { spotifyApi } from '../home/Home';
 export const CollectionTracks = () => {
   const  accessToken  =  localStorage.getItem('access_token');
   const { currentUser } = useContext(UserContext);
-  const [isPlaying, setIsPlaying] = useState(false);
+  
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<any>('');
 
@@ -63,7 +63,7 @@ export const CollectionTracks = () => {
         <Loading />
       ) : (
         <div className="page__wrapper">
-          <PageBanner play={[handlePlay, isPlaying]} colection data={data} />
+          <PageBanner play={[handlePlay, false]} colection data={data} />
           <div className="playlist__template">
             <div className="main__template__container">
               <TrackList var1="ALBUM" data={data} collection var2={undefined} />

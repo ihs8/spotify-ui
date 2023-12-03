@@ -12,7 +12,6 @@ import './styles/Template.styles.css';
 export const AlbumTemplate = () => {
   const  accessToken  =  localStorage.getItem('access_token');
 
-  const [isPlaying, setIsPlaying] = useState(false);
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<any>('');
 
@@ -77,7 +76,7 @@ export const AlbumTemplate = () => {
         <Loading />
       ) : (
         <div className="page__wrapper">
-          <PageBanner play={[handlePlay, isPlaying]} data={data} colection={undefined} />
+          <PageBanner play={[handlePlay, false]} data={data} colection={undefined} />
           <div className="page__template">
             <div className="main__template__container">
               <TrackList data={data} var1={undefined} var2={undefined} collection={undefined} />

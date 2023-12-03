@@ -3,7 +3,7 @@ import { useComponentVisible } from '../../utils';
 import './DropdownMenu.styles.css';
 
 export const DropdownMenu = ({ src, children, position }) => {
-  const { ref1, ref2, isComponentVisible, setIsComponentVisible } =
+  const { ref1, isComponentVisible, setIsComponentVisible } =
     useComponentVisible(false);
 
   return (

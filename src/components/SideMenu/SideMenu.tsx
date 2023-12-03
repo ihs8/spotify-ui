@@ -1,4 +1,4 @@
-import  { useContext, useEffect, useState } from 'react';
+import  { useContext, useEffect } from 'react';
 import './SideMenu.styles.css';
 import { Button } from '../index';
 import {
@@ -17,7 +17,7 @@ import {
 } from '../../assets/svg/index';
 import { spotifyApi } from '../../pages/home/Home';
 
-export const SideMenu = (props) => {
+export const SideMenu = () => {
   const { coverOpen, setCoverOpen } = useContext(isCoverOpen);
   const { currentUser } = useContext(UserContext);
   const { userPlaylists, setUserPlaylists } = useContext(PlaylistContext);

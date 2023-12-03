@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import  {  useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 
 import {
@@ -8,7 +8,6 @@ import {
   Loading,
   CardRowSection,
 } from '../../components';
-import { TokenContext } from '../../utils/context';
 import { generateRandomColor, useResponseFormater } from '../../utils';
 import './SearchPage.styles.css';
 import { spotifyApi } from '../home/Home';

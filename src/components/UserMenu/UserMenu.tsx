@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useComponentVisible } from '../../utils/useOutsideClick';
 import './UserMenu.styles.css';
 import {
@@ -6,7 +6,7 @@ import {
   ArrowUpMenuImg,
   UseDefaultImg,
 } from '../../assets/svg/index';
-import { TokenContext, UserContext } from '../../utils/context';
+import {  UserContext } from '../../utils/context';
 import { setCookie } from '../../utils/useCookie';
 import { spotifyApi } from '../../pages/home/Home';
 
@@ -14,7 +14,7 @@ export const UserMenu = () => {
 
   const { currentUser, setCurrentUser } = useContext(UserContext);
   const [isLoading, setIsLoading] = useState(true);
-  const { ref1, ref2, isComponentVisible, setIsComponentVisible } =
+  const { ref1, isComponentVisible, setIsComponentVisible } =
     useComponentVisible(false);
     const  accessToken  =  localStorage.getItem('access_token');
   useEffect(() => {

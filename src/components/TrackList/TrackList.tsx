@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { TrackItem } from '..';
 import { ClockImg } from '../../assets/svg';
 import './TrackList.styles.css';
@@ -37,7 +37,7 @@ export const TrackList = ({ data, var1, var2, collection }) => {
       {data.type == 'search' ? (
         <>
           {data.tracks
-            .filter((e, index) => index < 4)
+            .filter((_, index) => index < 4)
             .map((e, index) => {
               console.log(e);
               return (

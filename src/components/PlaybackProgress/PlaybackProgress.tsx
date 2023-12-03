@@ -3,14 +3,12 @@ import { useState } from 'react';
 import { RangeSlider } from '..';
 import './PlaybackProgress.styles.css';
 
-export const PlaybackProgress = (props) => {
+export const PlaybackProgress = () => {
 
 
-  const [audioMaxLength, setAudioMaxLength] = useState("0:0");
-  const [audioPlayedLength, setAudioPlayedLength] = useState("0:0"
-  );
+
   const [audioValue, setAudioValue] = useState(0);
-  const [progress, setProgress] = useState(0);
+
 
 
   const handleProgressValue = (value) => {
@@ -24,17 +22,17 @@ export const PlaybackProgress = (props) => {
 
   return (
     <div className="player__section--2">
-      <div className="time-section--1">{audioPlayedLength}</div>
+      <div className="time-section--1">{"0:0"}</div>
       <RangeSlider
         inputMin={0}
         
         handle={handleProgressValue}
-        progress={progress}
+        progress={0}
         inputValue={audioValue}
 
 
       />
-      <div className="time-section--2">{audioMaxLength}</div>
+      <div className="time-section--2">{"0:0"}</div>
     </div>
   );
 };

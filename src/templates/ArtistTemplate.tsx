@@ -12,7 +12,6 @@ import { spotifyApi } from '../pages/home/Home';
 
 export const ArtistTemplate = () => {
   const  accessToken  =  localStorage.getItem('access_token');
-  const [isPlaying, setIsPlaying] = useState(false);
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<any>('');
 
@@ -66,7 +65,7 @@ export const ArtistTemplate = () => {
         <Loading />
       ) : (
         <div className="page__wrapper">
-          <PageBanner play={[handlePlay, isPlaying]} data={data} colection={undefined} />
+          <PageBanner play={[handlePlay, false]} data={data} colection={undefined} />
           <div className="page__template">
             <div className="main__template__container">
               <TrackList var1="ALBUM" data={data} var2={undefined} collection={undefined} />

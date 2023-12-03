@@ -15,7 +15,6 @@ export const PlaylistTemplate = () => {
   
   const { currentUser } = useContext(UserContext);
   
-  const [isPlaying, setIsPlaying] = useState(false);
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<any>('');
 
@@ -76,7 +75,7 @@ export const PlaylistTemplate = () => {
         <Loading />
       ) : (
         <div className="page__wrapper">
-          <PageBanner play={[handlePlay, isPlaying]} data={data} colection={undefined} />
+          <PageBanner play={[handlePlay, false]} data={data} colection={undefined} />
 
           <div className="page__template">
             <div className="main__template__container">

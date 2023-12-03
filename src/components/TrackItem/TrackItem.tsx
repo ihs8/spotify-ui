@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import  { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './TrackItem.styles.css';
 import {
@@ -17,7 +17,7 @@ import {
 import { spotifyApi } from '../../pages/home/Home';
 
 export const TrackItem = (props) => {
-  const { data, index, trackList, var1, var2, type } = props;
+  const { data, index, trackList, var1, var2 } = props;
   const { currentTrack } = useContext(TrackContext);
   const { player } = useContext(PlayerContext);
   const { setMenssage } = useContext(Menssage);

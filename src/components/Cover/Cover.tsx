@@ -2,7 +2,6 @@ import { EditImg, SongImg } from '../../assets/svg';
 import './Cover.styles.css';
 
 export const Cover = ({ src, onClick, editable, children }) => {
-  const handleOpen = () => {};
 
   return (
     <>

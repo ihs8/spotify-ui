@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, useRef } from 'react';
+import  { useState, useEffect, useRef } from 'react';
 import SpotifyWebApi from 'spotify-web-api-js';
 import { CardRowSection, Loading, PageHeader } from '../../components/index';
 import { useResponseFormater } from '../../utils';

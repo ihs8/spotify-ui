@@ -1,13 +1,10 @@
-import React, { useState, createContext, useRef, useEffect, lazy } from 'react';
+import  { useState } from 'react';
 import './Layout.styles.css';
 import { Header, SideMenu, Player, FlashMenssage } from '../index';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes  } from 'react-router-dom';
 import {
   isCoverOpen,
-  TrackContext,
   AlbumContext,
-  PlayerContext,
-  DeviceContext,
   UserContext,
   PlaylistContext,
   Menssage,

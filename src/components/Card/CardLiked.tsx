@@ -9,7 +9,7 @@ export const CardLiked = (props) => {
 
 
   const { itemInfo } = props;
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, _] = useState(false);
   const cardRef = useRef<any>(null);
 
   const handlePlay = async () => {

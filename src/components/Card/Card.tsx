@@ -1,26 +1,23 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import  {   useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '..';
 import { PlayImg, Pause, SongImg } from '../../assets/svg';
-import {
-  Menssage,
 
-} from '../../utils/context';
 
 import './Card.styles.css';
-import { spotifyApi } from '../../pages/home/Home';
 
 export const Card = (props) => {
   
-  const { setMenssage } = useContext(Menssage);
   const { data } = props;
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, _] = useState(false);
   const { id, uri, name, type } = data;
   const cardRef = useRef<any>(null);
   
   const convertUri = (uri) => uri?.substr(7, uri.length).replaceAll(':', '/');
 
   const handlePlay = async () => {
+    console.log(uri);
+    
   };
 
 

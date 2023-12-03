@@ -8,7 +8,7 @@ import { useComponentVisible } from '../../utils';
 export const DeviceButton = () => {
   const { ref1,  isComponentVisible, setIsComponentVisible } =
     useComponentVisible(false);
-  const [showDevices, setShowDevices] = useState(false);
+  const [showDevices, _] = useState(false);
   return (
     <div className="devices__wrapper" ref={ref1}>
       <Button
