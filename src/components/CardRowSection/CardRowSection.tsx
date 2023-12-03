@@ -11,7 +11,7 @@ export const CardRowSection = (props: { title: any; data: any; }) => {
   const { title, data } = props;
   const [itensLength, setItensLength] = useState(0);
   const [newArray, setNewArray] = useState(
-    data.filter((e:any, index:any) => index < itensLength - 1),
+    data.filter((_, index:any) => index < itensLength - 1),
   );
   const { dimensions, ref } = useContainerDimensions();
   useEffect(() => {
@@ -19,7 +19,7 @@ export const CardRowSection = (props: { title: any; data: any; }) => {
       const filteredData = data.filter((e: number) => e === 0);
       setNewArray(filteredData);
     } else if (data) {
-      const newData = data.filter((e: any, index: number) => index < itensLength - 1);
+      const newData = data.filter((_, index: number) => index < itensLength - 1);
       setNewArray(newData);
     }
   }, [itensLength, data]);

@@ -7,7 +7,7 @@ import { LikeImg, Pause, PlayImg } from '../../assets/svg';
 import { Menssage } from '../../utils/context';
 
 import './PageBanner.styles.css';
-import { Button, Cover, EditInfo, OptionsDropdown } from '..';
+import { Button, Cover,  OptionsDropdown } from '..';
 import { useMinutesString } from '../../utils/useMinutesString';
 import { spotifyApi } from '../../pages/home/Home';
 
@@ -101,7 +101,7 @@ export const PageBanner = ({ play, data, colection }) => {
       </div>
 
       <div className="pageBanner">
-        <EditInfo isOpen={isOpen} setIsOpen={setIsOpen} data={data} />
+       
         <div
           className="pageBanner__color"
           style={

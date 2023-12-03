@@ -1,4 +1,4 @@
-import  {   useRef, useState } from 'react';
+import  {  useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '..';
 import { PlayImg, Pause, SongImg } from '../../assets/svg';

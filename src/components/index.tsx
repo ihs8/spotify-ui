@@ -6,7 +6,6 @@ export { Player } from './Player/Player';
 export { Button } from './Button/Button';
 export { UserMenu } from './UserMenu/UserMenu';
 export { RangeSlider } from './RangeSlider/RangeSlider';
-export { EditInfo } from './EditInfo/EditInfo';
 export { Card } from './Card/Card';
 export { CardLiked } from './Card/CardLiked';
 export { DeviceButton } from './DeviceButton/DeviceButton';
