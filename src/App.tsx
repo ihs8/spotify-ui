@@ -66,7 +66,7 @@ const App = () => {
   
      
       
-      if (location.pathname === '/spotify-ui/spotify-ui') navigate("/spotify-ui/")
+      if (location.pathname === 'https://ihs8.github.io/spotify-ui/spotify-ui') navigate("/spotify-ui/")
       tokenMutation.mutate({
         grant_type: 'refresh_token',
         refresh_token: getCookie('refresh_token'),
