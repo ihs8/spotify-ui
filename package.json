@@ -1,7 +1,7 @@
 {
   "name": "spotify-ui-ts",
   "homepage": "https://ihs8.github.io/spotify-ui/",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
